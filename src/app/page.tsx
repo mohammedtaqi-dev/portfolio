@@ -190,14 +190,14 @@ export default function Home() {
           <div className="max-w-3xl text-center animate-fade-up">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-indigo-50 dark:bg-indigo-500/10 border border-indigo-100 dark:border-indigo-500/20 text-xs font-medium text-indigo-600 dark:text-indigo-400 mb-8 available-badge">
               <span className="w-2 h-2 rounded-full bg-indigo-500 animate-pulse" />
-              Available for projects
+              Open to Work — internships
             </div>
             <h1 className="text-5xl sm:text-6xl font-bold tracking-tight mb-6 min-h-[1.2em]">
               Hi, I&apos;m{" "}
               <span className="gradient-text"><Typewriter text="Mohammed Taqi Uddin" speed={160} delay={400} /></span>
             </h1>
             <p className="text-lg text-gray-500 dark:text-slate-400 max-w-xl mx-auto leading-relaxed mb-10 animate-fade-up delay-300">
-              A 13-year-old developer crafting premium web applications with modern technologies. I build clean, performant, and beautiful digital experiences.
+              A 13-year-old developer crafting premium web apps with Next.js, TypeScript, and Tailwind. Currently seeking an internship to grow on a real engineering team.
             </p>
             <div className="flex items-center justify-center gap-4 animate-fade-up delay-400">
               <a href="#projects" className="btn-primary px-6 py-3 rounded-xl bg-gradient-to-r from-indigo-600 to-violet-600 text-white text-sm font-medium shadow-md hover:shadow-xl hover:shadow-indigo-500/25 hover:scale-105 transition-all duration-300">View Projects</a>
@@ -316,7 +316,8 @@ export default function Home() {
         <section id="contact" className="relative z-10 px-6 py-24 bg-white/50 dark:bg-slate-800/20" style={{ scrollMarginTop: 80 }}>
           <div className="max-w-lg mx-auto text-center">
             <h2 className="text-3xl font-bold mb-2 reveal">Get in Touch</h2>
-            <p className="text-gray-500 dark:text-slate-400 mb-10 reveal delay-100">Have a project in mind or just want to say hi?</p>
+            <p className="text-gray-500 dark:text-slate-400 mb-2 reveal delay-100">Currently looking for an internship opportunity.</p>
+            <p className="text-gray-400 dark:text-slate-500 text-sm mb-10 reveal delay-100">I build with Next.js, TypeScript, and Tailwind — and I'm ready to learn on a real team.</p>
             <div className="flex flex-col items-center gap-4 reveal delay-200">
               <button
                 onClick={() => { navigator.clipboard.writeText("javeriya337@gmail.com"); setToast("Email copied!"); setTimeout(() => setToast(""), 2500); }}
@@ -333,8 +334,11 @@ export default function Home() {
           <div className="max-w-5xl mx-auto flex items-center justify-between flex-wrap gap-2">
             <p className="text-xs text-gray-400 dark:text-slate-500">&copy; {new Date().getFullYear()} Mohammed Taqi Uddin</p>
             <div className="flex items-center gap-4">
-              <a href="https://github.com/mohammedtaqi-dev" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-600 dark:hover:text-slate-300 hover:scale-110 transition-all duration-200">
+              <a href="https://github.com/mohammedtaqi-dev" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-600 dark:hover:text-slate-300 hover:scale-110 transition-all duration-200" aria-label="GitHub">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+              <a href="https://linkedin.com/in/mohammedtaqi-dev" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-600 dark:hover:text-slate-300 hover:scale-110 transition-all duration-200" aria-label="LinkedIn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
               </a>
             </div>
           </div>
