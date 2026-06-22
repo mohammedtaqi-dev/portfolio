@@ -1,0 +1,23 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f9fafb"/>
+      <stop offset="100%" stop-color="#e5e7eb"/>
+    </linearGradient>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g transform="translate(540, 175)">
+    <rect x="0" y="0" width="120" height="120" rx="24" fill="white" stroke="#e5e7eb" stroke-width="2"/>
+    <g transform="translate(40, 20)">
+      <rect x="0" y="0" width="40" height="40" rx="8" fill="url(#g)" opacity="0.08"/>
+      <rect x="0" y="0" width="40" height="40" rx="8" stroke="url(#g)" stroke-width="1.2" opacity="0.4" fill="none"/>
+      <path d="M10 28V12H14L18 20L22 12H26V28H22V19L18 26L14 19V28H10Z" fill="url(#g)"/>
+    </g>
+  </g>
+  <text x="600" y="370" text-anchor="middle" fill="#111827" font-size="40" font-weight="bold" font-family="system-ui, sans-serif">Mohammed Taqi Uddin</text>
+  <text x="600" y="415" text-anchor="middle" fill="#6b7280" font-size="22" font-family="system-ui, sans-serif">Full-stack Developer</text>
+</svg>
