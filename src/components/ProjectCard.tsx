@@ -9,6 +9,7 @@ export default function ProjectCard({
 }) {
   function MockupPreview() {
     const screenshots: Record<string, string> = {
+      Quik: "/quik-screenshot.png",
       Vantage: "/vantage-screenshot.png",
       Aura: "/aura-screenshot.png",
     };
@@ -71,11 +72,11 @@ export default function ProjectCard({
           href={liveUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 text-sm font-medium text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 transition-all duration-200 group/link"
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium text-white bg-gradient-to-r from-indigo-500 to-violet-600 hover:from-indigo-600 hover:to-violet-700 shadow-sm hover:shadow-md hover:shadow-indigo-500/25 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 group/link"
           aria-label={`View ${title} live demo`}
         >
-          <span className="group-hover/link:tracking-wider transition-all duration-300">Live Demo</span>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="group-hover/link:translate-x-1 group-hover/link:-translate-y-1 transition-transform duration-300"><path d="M7 17l9-9M19 5v14H5"/></svg>
+          <span>Live Demo</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform duration-200"><path d="M7 17l9-9M19 5v14H5"/></svg>
         </a>
       </div>
     </div>

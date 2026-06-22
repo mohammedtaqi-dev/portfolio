@@ -155,7 +155,7 @@ export default function Home() {
       <div className="min-h-screen">
         <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-white/90 dark:bg-slate-900/90 backdrop-blur-xl shadow-lg shadow-indigo-500/5" : "bg-white/80 dark:bg-slate-900/80 backdrop-blur-md"} border-b border-gray-200 dark:border-slate-700/50`}>
           <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
-            <a href="#" className="flex items-center gap-2 hover:scale-105 transition-transform duration-300"><Logo size={28} /><span className="text-sm font-semibold text-gray-900 dark:text-white">Mohammed Taqi Uddin</span></a>
+            <a href="#" className="group/logo flex items-center gap-2 transition-all duration-300 hover:scale-[1.03]"><span className="transition-all duration-300 group-hover/logo:drop-shadow-[0_0_8px_rgba(99,102,241,0.5)] group-hover/logo:scale-105"><Logo size={28} /></span><span className="text-sm font-semibold text-gray-900 dark:text-white transition-all duration-300 group-hover/logo:bg-gradient-to-r group-hover/logo:from-indigo-500 group-hover/logo:to-violet-500 group-hover/logo:bg-clip-text group-hover/logo:text-transparent group-hover/logo:tracking-wide">Mohammed Taqi Uddin</span></a>
             <div className="hidden md:flex items-center gap-6">
               {NAV_ITEMS.map((id) => (
                 <a key={id} href={`#${id}`} className={`nav-link text-sm transition-colors ${activeSection === id ? "text-gray-900 dark:text-white" : "text-gray-500 dark:text-slate-400 hover:text-gray-900 dark:hover:text-white"}`} aria-current={activeSection === id ? "page" : undefined}>
