@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import ThemeToggle from "@/components/ThemeToggle";
 import ProjectCard from "@/components/ProjectCard";
 import AnimatedCounter from "@/components/AnimatedCounter";
@@ -130,14 +130,23 @@ export default function Home() {
     { name: "Netlify", icon: "netlify" },
   ];
 
-  const particleCount = 12;
+  const particles = useMemo(() =>
+    Array.from({ length: 12 }).map(() => ({
+      left: `${Math.random() * 100}%`,
+      animationDuration: `${12 + Math.random() * 20}s`,
+      animationDelay: `${Math.random() * -20}s`,
+      width: `${2 + Math.random() * 3}px`,
+      height: `${2 + Math.random() * 3}px`,
+      opacity: 0.3 + Math.random() * 0.3,
+    })), []
+  );
 
   return (
     <>
       <LoadingScreen />
       <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden" aria-hidden="true">
-        {Array.from({ length: particleCount }).map((_, i) => (
-          <div key={i} className="particle" style={{ left: `${Math.random() * 100}%`, animationDuration: `${12 + Math.random() * 20}s`, animationDelay: `${Math.random() * -20}s`, width: `${2 + Math.random() * 3}px`, height: `${2 + Math.random() * 3}px`, opacity: 0.3 + Math.random() * 0.3 }} />
+        {particles.map((s, i) => (
+          <div key={i} className="particle" style={s} />
         ))}
       </div>
       <div className="fixed top-0 left-0 right-0 z-[60] h-0.5 bg-gray-200 dark:bg-slate-700">
