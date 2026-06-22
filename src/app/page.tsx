@@ -157,7 +157,7 @@ export default function Home() {
       <div className="min-h-screen">
         <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-white/90 dark:bg-slate-900/90 backdrop-blur-xl shadow-lg shadow-indigo-500/5" : "bg-white/80 dark:bg-slate-900/80 backdrop-blur-md"} border-b border-gray-200 dark:border-slate-700/50`}>
           <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
-            <a href="#" className="group/logo flex items-center gap-2 transition-all duration-500"><span className="block transition-all duration-500 group-hover/logo:rotate-[-4deg] group-hover/logo:brightness-110"><Logo size={28} /></span><span className="text-sm font-semibold text-gray-900 dark:text-white transition-all duration-500 group-hover/logo:translate-x-0.5 group-hover/logo:bg-gradient-to-r group-hover/logo:from-indigo-500 group-hover/logo:to-violet-500 group-hover/logo:bg-clip-text group-hover/logo:text-transparent">Mohammed Taqi Uddin</span></a>
+            <a href="#" className="group/logo flex items-center gap-2 transition-all duration-500"><span className="block transition-all duration-500 group-hover/logo:rotate-[-4deg] group-hover/logo:brightness-110"><Logo size={28} /></span><span className="text-sm font-semibold text-gray-900 dark:text-white transition-all duration-500 group-hover/logo:translate-x-0.5">Mohammed Taqi Uddin</span></a>
             <div className="hidden md:flex items-center gap-6">
               {NAV_ITEMS.map((id) => (
                 <a key={id} href={`#${id}`} className={`nav-link text-sm transition-colors ${activeSection === id ? "text-gray-900 dark:text-white" : "text-gray-500 dark:text-slate-400 hover:text-gray-900 dark:hover:text-white"}`} aria-current={activeSection === id ? "page" : undefined}>
@@ -194,7 +194,7 @@ export default function Home() {
             </div>
             <h1 className="text-5xl sm:text-6xl font-bold tracking-tight mb-6 min-h-[1.2em]">
               Hi, I&apos;m{" "}
-              <span className="gradient-text"><Typewriter text="Mohammed Taqi Uddin" speed={90} delay={400} /></span>
+              <span className="gradient-text"><Typewriter text="Mohammed Taqi Uddin" speed={160} delay={400} /></span>
             </h1>
             <p className="text-lg text-gray-500 dark:text-slate-400 max-w-xl mx-auto leading-relaxed mb-10 animate-fade-up delay-300">
               A 13-year-old developer crafting premium web applications with modern technologies. I build clean, performant, and beautiful digital experiences.
