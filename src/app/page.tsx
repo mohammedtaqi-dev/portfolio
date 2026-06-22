@@ -127,7 +127,9 @@ export default function Home() {
     { name: "Git", icon: "git" },
     { name: "PWA", icon: "pwa" },
     { name: "CSS3", icon: "css3" },
-    { name: "Netlify", icon: "netlify" },
+    { name: "Vercel", icon: "vercel" },
+    { name: "GitHub", icon: "github" },
+    { name: "npm", icon: "npm" },
   ];
 
   const particles = useMemo(() =>
